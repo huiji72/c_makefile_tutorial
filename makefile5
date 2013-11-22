@@ -1,0 +1,28 @@
+IDIR=../include
+ODIR=obj
+LDIR=../lib
+LIBS=-lm
+
+CC=gcc
+CFLAGS=-I$(IDIR)
+
+_DEPS = hellomake.h
+DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
+
+_OBJ = hellomake.o hellofunc.o
+OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
+
+$(ODIR)/%.o: %.c $(DEPS)
+	$(CC) -c -o $@ $< $(CFLAGS)
+
+hellomake: $(OBJ)
+	gcc -o $@ $^ $(CFLAGS) $(LIBS)
+	rm -f $(ODIR)/*.o
+        
+
+#Clean all the .o files in ODIR
+clean: FORCE
+	rm -f $(ODIR)/*.o 
+
+FORCE:
+	
