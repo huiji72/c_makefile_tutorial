@@ -4,7 +4,7 @@
     4  root
     5  gcc
     6  gcu
-    7  man gcc
+    //7  man gcc
     8  sudo apt-get install build-essential
     9  cd /home/huiji72
    10  pwd
@@ -14,7 +14,7 @@
    14  ls
    15  gcc hello.c -o hello
    16  ls
-   17  hello
+   17  hello//
    18  cd hello
    19  ls
    20  ./hello
