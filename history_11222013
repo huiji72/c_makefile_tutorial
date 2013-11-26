@@ -23,8 +23,8 @@
    23  sudo apt-get install
    24  sudo apt-get install vim
    25  vim hello.c
-   26  gdb ./hello //changes made from branch_dev2 on 11/26
-   27  ls -l
+   26  gdb ./hello //changes made from branch_dev2 on 11/26, and modified on branch_dev1
+   27  ls -l   //changes made from branch_dev1
    28  gdb -q ./hello -tui
    29  vim hello
    30  vim hello.c
