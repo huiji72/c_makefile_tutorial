@@ -27,7 +27,7 @@
    27  ls -l
    28  gdb -q ./hello -tui
    29  vim hello
-   30  vim hello.c
+   30  vim hello.c //add a comments here 11/16
    31  exit
    32  ls
    33  gcc -g -o hello hello.o
