@@ -23,11 +23,11 @@
    23  sudo apt-get install
    24  sudo apt-get install vim
    25  vim hello.c
-   26  gdb ./hello
+   26  gdb ./hello //changes made from branch_dev2 on 11/26
    27  ls -l
    28  gdb -q ./hello -tui
    29  vim hello
-   30  vim hello.c
+   30  vim hello.c //add a comments here 11/16
    31  exit
    32  ls
    33  gcc -g -o hello hello.o
